@@ -1,0 +1,77 @@
+/* Base styles */
+body {
+	margin: 0;
+	padding: 0;
+	background: #eef2f3;
+	font-family: 'Poppins', sans-serif;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100vh;
+  }
+  
+  /* Wrapper */
+  .wrapper {
+	text-align: center;
+	padding: 30px;
+	max-width: 900px;
+  }
+  
+  /* Title */
+  h1 {
+	font-size: 2.5rem;
+	color: #333;
+	margin-bottom: 10px;
+	position: relative;
+  }
+  
+  /* Animated underline */
+  .underline {
+	width: 80px;
+	height: 4px;
+	background: #4caf50;
+	margin: 0 auto 30px auto;
+	border-radius: 2px;
+	animation: expand 1s ease-out forwards;
+  }
+  
+  @keyframes expand {
+	from {
+	  width: 0;
+	  opacity: 0;
+	}
+	to {
+	  width: 80px;
+	  opacity: 1;
+	}
+  }
+  
+  /* Diagram card */
+  .diagram-card {
+	background: #fff;
+	padding: 20px;
+	border-radius: 12px;
+	box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+	transition: all 0.3s ease;
+	margin-bottom: 20px;
+  }
+  
+  .diagram-card:hover {
+	box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+	transform: translateY(-5px);
+  }
+  
+  /* Image styling */
+  .diagram-card img {
+	max-width: 100%;
+	height: auto;
+	border-radius: 8px;
+  }
+  
+  /* Caption */
+  .caption {
+	color: #666;
+	font-size: 1rem;
+	margin-top: 10px;
+  }
+  
